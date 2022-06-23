@@ -1,0 +1,17 @@
+.navBar {
+  position: absolute;
+  display: flex;
+  top: 7vh;
+  left: 6.5vw;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 2vh;
+}
+
+.navLink + .navLink {
+  margin-left: 1vw;
+}

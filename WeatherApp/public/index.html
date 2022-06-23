@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created by Yooololo" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Yooololo's Weather App</title>
+    <script type="text/javascript">
+      function display_c(){
+      var refresh=1000; // Refresh rate in Milliseconds
+      mytime=setTimeout('display_ct()',refresh)
+      }
+
+      function display_ct() {
+        let x = new Date();
+        let ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+        hours = x.getHours( ) % 12;
+        hours = hours ? hours : 12;
+        hours=hours.toString().length==1? 0+hours.toString() : hours;
+        let minutes=x.getMinutes().toString()
+        minutes=minutes.length==1 ? 0+minutes : minutes;
+        let seconds=x.getSeconds().toString()
+        seconds=seconds.length==1 ? 0+seconds : seconds;
+        let month=(x.getMonth() +1).toString();
+        month=month.length==1 ? 0+month : month;
+        let dt=x.getDate().toString();
+        dt=dt.length==1 ? 0+dt : dt;
+        let x1=month + "/" + dt + "/" + x.getFullYear(); 
+        x1 = x1 + " - " +  hours + ":" +  minutes + " " + ampm;
+        document.getElementById('ct').innerHTML = x1;
+        display_c();
+      }
+
+    </script>
+  </head>
+  <body onload="display_ct();">
+    <div id="root"></div>
+  </body>
+</html>

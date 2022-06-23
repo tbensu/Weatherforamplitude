@@ -1,0 +1,31 @@
+.titulo {
+  border-radius: 20px;
+  font-size: 3vh;
+  justify-content: center;
+  align-self: center;
+  justify-items: center;
+  width: auto;
+  height: 8vh;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: rgba(175, 175, 175, 0.8);
+  border: 1px solid white;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.toito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}

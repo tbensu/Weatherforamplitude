@@ -1,0 +1,6 @@
+.tarjetasCiudades {
+  display: grid;
+  grid-template-rows: 36vh 36vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-right: -2vw;
+}

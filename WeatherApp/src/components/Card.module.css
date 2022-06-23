@@ -1,0 +1,177 @@
+:root {
+  --primary-color: rgba(131, 82, 93, 0.55);
+  --secondary-color: rgba(123, 148, 158, 0.7);
+}
+
+.primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0;
+  margin-top: 3vh;
+  margin-left: 3vw;
+  margin-right: 5vw;
+  width: 25vw;
+  height: 63.5vh;
+  background-color: var(--secondary-color);
+  border: solid #ffffffbd 2px;
+  border-radius: 1rem;
+  color: black;
+}
+
+.primary .nombreCiudad {
+  font-size: 4.5vh;
+  width: auto;
+  margin: 0.75vh 0;
+  height: 12vh;
+  margin-top: 2.5vh;
+  background-color: var(--primary-color);
+  color: black;
+}
+
+.primary .temperaturasCiudades {
+  font-size: 2.5vh;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -1vh;
+}
+
+.primary .hijdeyuta {
+  width: 95%;
+}
+
+.primary img {
+  display: flex;
+  width: 24vh;
+  margin-left: 5.75vw;
+  margin-top: -4vh;
+}
+
+.primary button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2vw;
+  height: 2vw;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  border: solid #ffffffbd 2px;
+  border-radius: 1rem;
+  margin-left: 11.5vw;
+  margin-top: -0.5vh;
+  font-weight: bold;
+}
+
+.primary button :hover {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+.primary button :focus {
+  outline: none;
+}
+
+.primary .tempEspecial {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 3vh;
+  margin-bottom: 4vh;
+  font-size: 3.5vh;
+  font-weight: bold;
+}
+
+.primary .parametrosEsp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 2vh;
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+
+.parametrosEsp {
+  display: none;
+}
+
+.tarjetaCiudad {
+  display: grid;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 16vw;
+  height: 27vh;
+  background-color: var(--secondary-color);
+  border: solid #ffffffbd 2px;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+
+.nombreCiudad {
+  display: flex;
+  text-transform: capitalize;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  font-style: oblique;
+  font-weight: normal;
+  font-size: 3vh;
+  margin: 0.5vw 0.5vh;
+  border: solid #ffffffbd 2px;
+  width: 15vw;
+  height: 8vh;
+  margin-top: 1vh;
+  color: black;
+}
+
+.botonCiudad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2vw;
+  height: 2vw;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  border: solid #ffffffbd 2px;
+  border-radius: 1rem;
+  font-weight: bold;
+  margin-left: 7vw;
+  margin-top: -5vh;
+}
+
+.botonCiudad:hover {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+.botonCiudad:focus {
+  outline: none;
+}
+
+.temperaturasCiudades {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0;
+  font-size: 2vh;
+  font-weight: bold;
+  color: black;
+}
+
+.imagenCiudad {
+  width: 14vh;
+  align-self: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4vh;
+  margin-left: 4.5vw;
+}

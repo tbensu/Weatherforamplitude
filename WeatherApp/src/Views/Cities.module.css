@@ -1,0 +1,7 @@
+.cartitas {
+    display: grid;
+    grid-template-columns: 30vw 20vw 20vw 20vw;
+    grid-template-rows: 36vh 36vh;
+  }
+
+
